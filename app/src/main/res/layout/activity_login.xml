@@ -26,7 +26,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        app:cardBackgroundColor="#2D2839"
+        app:cardBackgroundColor="#EDE4F3"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email Id"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/etEmail"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -53,9 +53,9 @@
                 android:id="@+id/etEmail"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="#000000"
                 android:inputType="textEmailAddress"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:textColorHint="#AAAAAA"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/tvEmail"
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Password"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/etPassword"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -76,9 +76,9 @@
                 android:id="@+id/etPassword"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="#000000"
                 android:inputType="textPassword"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:textColorHint="#AAAAAA"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/tvPassword"
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
                 android:text="Forgot Password?"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/etPassword" />
@@ -110,5 +110,36 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardLogin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:paddingLeft="10sp"
+            android:textColor="#E91E63"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
